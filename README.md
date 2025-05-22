@@ -1,4 +1,4 @@
-# ☕ Enhanced Coffee Machine - Event-Driven Architecture
+# ☕ Macchinetta del caffè - Event-Driven Architecture
 
 ## 🎯 Panoramica del Progetto
 
@@ -471,4 +471,4 @@ Progetto svolto da:
 - **Federico Burello**
 
 Realizzato per l’esercitazione “**Event-Driven Architecture**”  
-nel corso di **Architetture Cloud** – ITS Alto Adriatico
+nel corso di **Architetture Cloud IoT** – ITS Alto Adriatico
