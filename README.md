@@ -51,7 +51,7 @@ L'implementazione dimostra una **comprensione approfondita** di:
 | `ERROR` | ❌ Stato di errore | Permanente | Logging errore | `reset_error` → READY |
 
 ### Diagramma delle Transizioni
-![Diagramma Stati](./Flowchart.jpeg)
+![Diagramma Stati](./diagramma_a_stati.png)
 
 ### Logica di Transizione Avanzata
 
