@@ -51,35 +51,7 @@ L'implementazione dimostra una **comprensione approfondita** di:
 | `ERROR` | ❌ Stato di errore | Permanente | Logging errore | `reset_error` → READY |
 
 ### Diagramma delle Transizioni
-
-```mermaid
-stateDiagram-v2
-    [*] --> OFF : Sistema avviato
-    
-    OFF --> SELF_CHECK : turn_on
-    
-    SELF_CHECK --> READY : Self check OK (3-7s)
-    SELF_CHECK --> ERROR : Self check failed
-    
-    READY --> OFF : turn_off
-    READY --> ASK_BEVERAGE : place_cup
-    READY --> SELF_CLEAN : start_cleaning / auto_cleaning(10 beverages)
-    
-    ASK_BEVERAGE --> READY : remove_cup / timeout(30s)
-    ASK_BEVERAGE --> PRODUCE_BEVERAGE : confirm_selection
-    ASK_BEVERAGE --> ASK_BEVERAGE : select_beverage
-    
-    PRODUCE_BEVERAGE --> ASK_BEVERAGE : beverage_ready + cup_present
-    PRODUCE_BEVERAGE --> READY : beverage_ready + cup_removed
-    PRODUCE_BEVERAGE --> ERROR : production_error / cup_missing
-    PRODUCE_BEVERAGE --> SELF_CLEAN : auto_cleaning_trigger(10th beverage)
-    
-    SELF_CLEAN --> READY : cleaning_successful (8s)
-    SELF_CLEAN --> ERROR : cleaning_error
-    
-    ERROR --> READY : reset_error / refill_resources
-    [any_state] --> OFF : turn_off
-```
+![Diagramma Stati](./Flowchart.jpeg)
 
 ### Logica di Transizione Avanzata
 
