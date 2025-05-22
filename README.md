@@ -462,3 +462,13 @@ class ErrorType(Enum):
 - **Graceful Degradation**: Spegnimento sicuro da qualsiasi stato
 
 ---
+
+## 📄 Crediti
+
+Progetto svolto da:
+
+- **Matteo Didonè**
+- **Federico Burello**
+
+Realizzato per l’esercitazione “**Event-Driven Architecture**”  
+nel corso di **Architetture Cloud** – ITS Alto Adriatico
